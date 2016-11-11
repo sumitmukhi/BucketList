@@ -17,3 +17,14 @@ To run Bucketist web apllication, run the following command in the Console
 ```sh
 $ python app.py
 ```
+
+# Amazon S3 
+
+* Login to AWS portal (https://console.aws.amazon.com/console/home)
+* AWS Services -> S3
+* Create a bucket
+* Make bucket public by adding bucket policy
+```sh
+{ "Version": "2008-10-17", "Statement": [{ "Sid": "AllowPublicRead", "Effect": "Allow", "Principal": { "AWS": "*" }, "Action": ["s3:GetObject"], "Resource": ["arn:aws:s3:::bucket/*" ] }] }
+```
+* Create AWS access keys
