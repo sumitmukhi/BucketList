@@ -1,66 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Python Flask Bucket List App</title>
-
-   
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
 
-   
-  </head>
-
-  <body>
-
-    <div class="container">
-      <div class="header">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="/showSignin">Sign In</a></li>
- 	    <li role="presentation"><a href="/showSignUp">Sign Up</a></li>
-          </ul>
+<body>
+    <div class="top-content" style="position: relative; z-index: 0; ">
+        <!-- Top menu -->
+        <nav role="navigation" class="navbar navbar-inverse navbar-no-bg">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button data-target="#top-navbar-1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a target="_blank" href="#" class="navbar-brand"><i class="fa fa-bullseye"></i></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div id="top-navbar-1" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="scroll-link">Home</a></li>
+                        <li><a href="/showSignin" class="scroll-link">Login</a></li>
+                        <li><a href="/showSignUp" class="scroll-link">Register</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <h3 class="text-muted">Python Flask App</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>Bucket List App</h1>
-        <p class="lead"></p>
-        <p><a class="btn btn-lg btn-success" href="/showSignUp" role="button">Sign up today</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Bucket List</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Bucket List</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Bucket List</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        <div class="inner-bg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-5 phone wow fadeInLeft animated text-center" style="visibility: visible; animation-name: fadeInLeft;">
+                        <img style="display: inline; height: 500px;" class="img-responsive" alt="sumitmukhi" title="sumitmukhi" src="https://lh3.googleusercontent.com/tfs8w7xOLpLfM36qNvLC-l6kprHqAaxU7GSYzpZNdrfuOjQnTGmupLDRvN7XPq9D1PI=h900">
+                    </div>
+                    <div class="col-sm-7 text wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                        <h1><strong>Bucket List</strong> <br><small>Try it now!</small></h1>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </div>
+                        <div class="top-big-link">
+                            <a href="/showSignUp" class="btn btn-link-1">Sign Up Today</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="col-lg-6">
-          <h4>Bucket List</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Bucket List</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Bucket List</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
-
-      <footer class="footer">
-        <p>&copy; Company 2015</p>
-      </footer>
-
     </div>
-  </body>
-</html>
+    <footer class="text-center bck_gray">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mar_bot_top_ten">
+                        <br> © <i class="fa fa-bullseye"></i> 2016. Design by
+                        <a href="https://www.rwitter.com/sumitmukhi" title="sumit mukhi" target="_blank">Sumit Mukhi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 
+</html>

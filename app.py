@@ -10,6 +10,7 @@ from werkzeug import generate_password_hash, check_password_hash, secure_filenam
 mysql = MySQL()
 app = Flask(__name__)
 # app.secret_key = 'why would I tell you my secret key?'
+# import os ---> os.urandom(24)
 app.secret_key = '<\x13\x00\x96\x04nuQ\xde\xe5\xc3\xc7\x1a"VPd\x96Jd\x04\xfa~\x8f'
 
 # MySQL configurations
