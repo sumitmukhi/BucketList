@@ -5,7 +5,7 @@ Flask-MySQL==1.4.0
 Flask-SQLAlchemy==0.16
 httplib2==0.9
 itsdangerous==0.22
-Jinja2==2.7
+Jinja2==2.11.3
 lxml==3.4.2
 MarkupSafe==0.18
 mimerender==0.5.4
